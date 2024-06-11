@@ -8,46 +8,51 @@
 <body>
     <h2>Kayıt Formu</h2>
 
-<form>
-  <!-- Text Input -->
-  <label for="fname">Ad:</label><br>
-  <input type="text" id="fname" name="fname" required><br>
+    <form>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <!-- Text Input -->
+            <label for="fname">Ad:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
 
-  <label for="lname">Soyad:</label><br>
-  <input type="text" id="lname" name="lname" required><br>
+            <label for="lname">Soyad:</label><br>
+            <input type="text" id="lname" name="lname" required><br>
 
-  <!-- Email Input -->
-  <label for="email">E-posta:</label><br>
-  <input type="email" id="email" name="email" required><br>
+            <!-- Email Input -->
+            <label for="email">E-posta:</label><br>
+            <input type="email" id="email" name="email" required><br>
 
-  <!-- Password Input -->
-  <label for="pwd">Şifre:</label><br>
-  <input type="password" id="pwd" name="pwd" minlength="8" required><br>
+            <!-- Password Input -->
+            <label for="pwd">Şifre:</label><br>
+            <input type="password" id="pwd" name="pwd" minlength="8" required><br>
 
-  <!-- Radio Button Input -->
-  <p>Cinsiyet:</p>
-  <input type="radio" id="male" name="gender" value="male" required>
-  <label for="male">Erkek</label><br>
-  <input type="radio" id="female" name="gender" value="female" required>
-  <label for="female">Kadın</label><br><br>
+            <!-- Radio Button Input -->
+            <p>Cinsiyet:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Erkek</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Kadın</label><br><br>
+        </fieldset>
 
-  <!-- Favorite Fruit Selection -->
-  <label for="fruit">Favori Meyve:</label><br>
-  <select id="fruit" name="fruit" required>
-    <option value="">Bir meyve seçin</option>
-    <option value="apple">Elma</option>
-    <option value="banana">Muz</option>
-    <option value="strawberry">Çilek</option>
-  </select><br><br>
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <!-- Favorite Fruit Selection -->
+            <label for="fruit">Favori Meyve:</label><br>
+            <select id="fruit" name="fruit" required>
+                <option value="">Bir meyve seçin</option>
+                <option value="apple">Elma</option>
+                <option value="banana">Muz</option>
+                <option value="strawberry">Çilek</option>
+            </select><br><br>
 
-  <!-- Textarea Input -->
-  <label for="message">Mesaj:</label><br>
-  <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <!-- Textarea Input -->
+            <label for="message">Mesaj:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        </fieldset>
 
-  <!-- Submit Button -->
-  <input type="submit" value="Gönder">
-
-</form>
+        <!-- Submit Button -->
+        <input type="submit" value="Gönder">
+    </form>
 
 </body>
 </html>
